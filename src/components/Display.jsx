@@ -20,12 +20,11 @@ function Display() {
   };
  
     return (
-        <div className=" h-[100] w-[28%] border-4 shadow-2xl bg-secondary-800 text-white flex flex-col items-center justify-start rounded-[32px]  ">
-            <Header />
-
-            <DisplayCards tareas={tareas}  eliminarTarea={eliminarTarea} />
-            <Inputs agregarTarea={agregarTarea} />
-        </div>
+      <div className="w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] bg-secondary-800 text-white flex flex-col items-center justify-start rounded-3xl p-4">
+      <Header />
+      <DisplayCards tareas={tareas} eliminarTarea={eliminarTarea} />
+      <Inputs agregarTarea={agregarTarea} />
+    </div>
     )
 }
 
